@@ -2,10 +2,63 @@ body {
   background-color: white;
 }
 
+h1 {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 46px;
+    margin: 0 0 23px 0;
+    color: #ff2a65;
+    padding-top: 25px;
+    text-transform:uppercase;
+    padding-left: 50px;
+   
+    }
+
+h2 {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    line-height: 46px;
+    font-size: 42px;
+    margin: 0 0 23px 0;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-transform:uppercase;
+    /*background-color: #ff2a65;*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    /*border-bottom: 4px solid #ff2a65;;
+*/
+    }
+
+h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: -25px;
+    text-align: center;
+    vertical-align: middle;
+    color: #666666;
+    padding-right:20px;
+	padding-left:20px;
+    }
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    line-height: 23px;
+    margin: 0 0 23px 0;
+    }
+
+
+
 .header {
 	max-width: 100%; height: auto;
 	display: flex;
- flex-flow: row
+	flex-flow: row
   padding-top: 35px;
   margin-top:-10px;       
 } 
@@ -14,38 +67,150 @@ body {
 	margin: 44px;
 }
 
-.profile {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-}
+/*.profile {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  z-index: 1px;
+
+}*/
 
 .sidebar {
-	background: #384047;
-	width: 100px;
+	background: #333333;
+	width: 70px;
 	position: fixed;
-	padding: 10px;
 	top: 0;
 	right: 0;
 	bottom: 0;
-	z-index: -1;
+	z-index:-1;
+	vertical-align: middle;
 }
 
-.view_nav .app_nav {
+.global-nav {
+	position: relative;
+	height: 100%;
+	float: right;
+}
+
+.global-nav a {
+	display: block;
+	height: 60px;
+	line-height: 50px;
+	margin-bottom: 10px;
+	text-align: center;
+	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: center;
+
+}
+
+.profile-pic {
+	background: url(../images/profile_pic.png) no-repeat;
+	width: 60px;
+	height: 70px;
 	display: inline-block;
+	vertical-align: middle;
+}
+
+.icon-caricon {
+	background: url(../images/caricon.png) no-repeat;
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.icon-gridicon {
+	background: url(../images/gridicon.png) no-repeat;
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.completed-to-dos {
+	background: url(../images/completed.png) no-repeat;
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.all-to-dos {
+	background: url(../images/alltodos.png) no-repeat;
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.in-progress {
+	background: url(../images/inprogress.png) no-repeat;
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+.new-task {
+	background: url(../images/addtask.png) no-repeat;
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.global-nav .nav-tooltip {
 	position: absolute;
-    top: 120px;
-    right: 20px;
-    margin-left: 35px;
+	background: #333333;
+	padding: 12px 13px 14px;
+	top: 4px;
+	right: 75px;
+	white-space: nowrap;
+}
+
+.global-nav .nav-tooltip {
+	content: "";
+	position: absolute;
+	right: 50%;
+	margin-top: -11px;
+	width: 8px;
+	z-index: 20;
+	display: none;
+}
+
+.global-nav .nav-tooltip:hover {
+	content: "";
+	position: absolute;
+	right: 50%;
+	margin-top: -11px;
+	width: 8px;
+	z-index: 21;
+	display: none;
+}
+/*.view_nav {
+	display: inline-block;
+	position: relative;
+  top: 120px;
+  right: 20px;
+  margin-left: 35px;
+  width: 60px;
+  height: 60px;
+	vertical-align: middle;
 }
 
 .app_nav {
 	display: inline-block;
 	position: absolute;
-    top: 120px;
-    right: 20px;
-    margin-left: 35px;
-}
+  top: 120px;
+  right: 20px;
+  margin-left: 35px;
+ 
+}*/
 
 .wrap{
 	margin-left: auto;
@@ -53,10 +218,8 @@ body {
 	width: 960px;
 	position: relative;
 }
-h1{
-	font-size: 5em;	
-	font-family: arial,helvetica;
-}
+
+
 .section{
 	text-align:center;
 	
@@ -110,3 +273,7 @@ img {
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     }
+
+ /*................carousal*/
+
+

@@ -1,0 +1,135 @@
+.card {
+	display: inline-block;
+	position: relative;
+	left: 50%;
+	padding-top: 20px;
+	text-transform:uppercase;
+}     
+
+.cardbtn {
+	border-radius: 10px;
+	border: 4px solid;
+	border-color: #ff2a65;
+	width: 92%;
+	height: 80px;
+	position: fixed;
+	left: 3%;
+	top: 65%;
+	float: left;
+	/*background-color: #cccccc;*/
+}
+
+.cardbtn a {
+    display: inline-block;
+    display: -moz-inline-box;
+    zoom: 1; /* Trigger hasLayout */
+    width: 32%;
+    text-align: center; 
+    padding-top: 35px;
+    
+}
+
+.line-separator{
+
+height:1px;
+background:#717171;
+border-right:1px solid #313030;
+
+}
+
+
+.button {
+	font-family: 'Oxygen', sans-serif;
+    
+    line-height: 14px;
+    font-size: 16px;
+    margin: 0 0 23px 0;
+    color: #ff2a65;
+    text-decoration: none;
+    }
+
+.dg-container{
+	width: 100%;
+	height: 450px;
+	position: absolute;
+	left: -245px;
+	padding-top: 150px;
+	
+}
+.dg-wrapper{
+
+
+	width: 481px;
+	height: 316px;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-o-perspective: 1000px;
+	-ms-perspective: 1000px;
+	perspective: 1000px;
+}
+.dg-wrapper .card{
+	width: 592px;
+	height: 300px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 20px;
+	border: 8px solid;
+	border-color: #ff2a65;
+	background: #fff;
+}
+
+.card {
+	width: 481px;
+	height: 316px;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-o-perspective: 1000px;
+	-ms-perspective: 1000px;
+	perspective: 1000px;
+}
+
+
+.dg-wrapper div.dg-transition{
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+3
+.dg-wrapper a.dg-center div{
+	display: block;
+}
+.dg-container nav{
+	width: 58px;
+	position: absolute;
+	z-index: 1000;
+	bottom: 40px;
+	left: 50%;
+	margin-left: -29px;
+}
+.dg-container nav span{
+	text-indent: -9000px;
+	float: left;
+	cursor:pointer;
+	width: 24px;
+	height: 25px;
+	opacity: 0.8;
+	background: transparent url(../images/arrows.png) no-repeat top left;
+}
